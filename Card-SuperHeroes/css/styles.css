@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --marron: #d1891c;
+    --blue: #00669f;
+    --white: #ffffff;
+    --gris: #f3f3f3;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+}
+
+header {
+    height: 15vh;
+}
+
+header p {
+    background-color: var(--marron);
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 1.5%;
+}
+
+header h1 {
+    background-color: var(--blue);
+    height: 11vh;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5%;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main .card-container {
+    width: 280px;
+    height: 77%;
+    background-color: var(--gris);
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 5vh;
+}
+
+main .card-container .images-container {
+    position: relative;
+    width: 100%;
+}
+
+main .card-container .images-container .bg-batman {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+main .card-container .images-container .batman-picture {
+    position: absolute;
+    z-index: 1;
+    width: 33%;
+    right: 35%;
+    top: 70%;
+    border-radius: 50%;
+}
+
+main .card-container .images-container .heart-icon {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    height: 5vh;
+}
+
+main .card-container .hero-details {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .card-container .hero-details h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .card-container .hero-details p {
+    height: 25vh;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+
+main .card-container .hero-details .button-container {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .card-container .hero-details .button-container button {
+    height: 60%;
+    width: 40%;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--blue);
+    margin-top: 5vh;
+    position: relative;
+}
+
+footer p {
+    height: 100%;
+    color: var(--white);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    width: 8%;
+    margin-right: 2%;
+}
+
+@media (max-width: 768px) {
+    main .card-container .images-container .heart-icon {
+        height: 3vh;
+    }
+
+    main .card-container .hero-details p {
+        height: 100%;
+    }
+
+    main .card-container .hero-details .button-container {
+        height: 8vh;
+        align-items: center;
+    }
+
+    footer img {
+        bottom: 35%;
+        margin-right: 5%;
+        width: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        padding-left: 5%;
+    }
+
+    header h1 {
+        padding-left: 5%;
+    }
+
+    main .card-container .hero-details .button-container {
+        height: 12vh;
+    }
+
+    main .card-container .hero-details .button-container button {
+        height: 50%;
+    }
+
+    footer p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
