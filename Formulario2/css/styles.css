@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #00669f;
+    --white: #ffffff;
+    --gris: #f3f3f3;
+    --green: #1CD1B0;
+    --dark-green: #001D2D;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+}
+
+header {
+    height: 25vh;
+}
+
+header p {
+    background-color: var(--green);
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 1.5%;
+}
+
+header .title {
+    background-color: var(--blue);
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5%;
+}
+
+header h1 {
+    font-weight: 400;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+header img {
+    height: 90%;
+    margin-right: 1%;
+}
+
+header .nav-bar {
+    background-color: var(--dark-green);
+    height: 5vh;
+    color: var(--white);
+}
+
+header .nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+header .nav-bar ul li {
+    margin-right: 2%;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .card-container {
+    width: 250px;
+    height: 77%;
+    background-color: var(--gris);
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 5vh;
+    margin-left: 3%;
+}
+
+main .card-container .images-container {
+    position: relative;
+    width: 100%;
+}
+
+main .card-container .images-container .bg-batman {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+main .card-container .images-container .batman-picture {
+    position: absolute;
+    z-index: 1;
+    width: 33%;
+    right: 35%;
+    top: 70%;
+    border-radius: 50%;
+}
+
+main .card-container .images-container .heart-icon {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    height: 4vh;
+}
+
+main .card-container .hero-details {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .card-container .hero-details h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .card-container .hero-details p {
+    height: 20vh;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+
+main .card-container .hero-details .button-container {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .card-container .hero-details .button-container button {
+    height: 60%;
+    width: 40%;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+main .button-add-container {
+    position:relative
+}
+
+main .button-add-container button {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 25vh;
+    left: 10vh;
+}
+
+main .button-add-container button a img {
+    height: 55px;
+    width: 55px;
+}
+
+footer {
+    height:8vh;
+    background-color: var(--blue);
+    margin-top: 10vh;
+    position: relative;
+}
+
+footer p {
+    height: 100%;
+    color: var(--white);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    main .card-container .images-container .heart-icon {
+        height: 3vh;
+    }
+
+    main .card-container .hero-details p {
+        height: 100%;
+    }
+
+    main .card-container .hero-details .button-container {
+        height: 8vh;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        padding-left: 5%;
+    }
+
+    header h1 {
+        padding-left: 5%;
+    }
+
+    main .card-container .hero-details .button-container {
+        height: 12vh;
+    }
+
+    main .card-container .hero-details .button-container button {
+        height: 50%;
+    }
+
+    footer p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}

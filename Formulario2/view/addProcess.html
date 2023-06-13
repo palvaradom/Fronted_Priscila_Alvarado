@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/stylesAddProcess.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <p>20% de descuento en todos los productos!</p>
+            <div class="title">
+                <img src="../img/icon-store.svg" />
+                <h1>Card Super Heroes</h1>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>Contacto</li>
+                    <li>Registrarme</li>
+                    <li>Ingresar</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/registro" method="POST" class="formulario">
+                <div class="form-titulo">
+                    <h2>Añadí tu super!</h2>
+                    <p>
+                        Agregá tu personaje favorito completando las opciones.
+                    </p>
+                </div>
+                <div class="form-informacion">
+                    <section class="form-informacion-izquierda">
+                        <label for="nombre" class="field-nombre">*Nombre</label>
+                        <input type="text" id="nombre">
+                        <label for="fecha" class="field-fecha">Fecha</label>
+                        <input type="date" id="fecha" value="fecha">
+                        <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+                    </section>
+
+                    <section class="form-informacion-derecha">
+                        <label for="especie" class="field-especie">*Especie</label>
+                        <select id="especie" name="especie">
+                            <option value="" disabled selected>Especie</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <label for="foto" class="field-foto">Agregar foto</label>
+                        <input type="file" name="foto" id="foto"  accept=".jpg">
+
+                        <p class="field-poderes">Poderes</p>
+                        <label class="field-volar poderes">
+                            <input type="checkbox" name="poderes" value="volar" class="input-poderes">Volar
+                        </label>
+                        <label class="field-superinteligencia  poderes">
+                            <input type="checkbox" name="poderes" value="superinteligencia" class="input-poderes">Superinteligencia
+                        </label>
+                        <label class="field-vista-rayo-laser  poderes">
+                            <input type="checkbox" name="poderes" value="vista-de-rayo-laser" class="input-poderes"> Vista de rayo laser
+                        </label>
+                        <label class="field-billetera-gorda  poderes">
+                            <input type="checkbox" name="poderes" value="billetera-gorda" class="input-poderes">Billetera gorda
+                        </label>
+
+                        <hr>
+
+                        <p class="field-tipo-personaje">Tipo de personaje</p> 
+                        <label class="personajes">
+                            <input type="radio" name="tipo-de-personaje" value="Heroe/Heroina" class="input-personaje">Heroe/Heroina
+                        </label>
+                        <label  class="personajes">
+                            <input type="radio" name="tipo-de-personaje" value="Villano/Villana" class="input-personaje">Villano/Villana
+                        </label>
+                    </section>
+                </div>
+                <div class="button-container">
+                    <button>Añadir</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </footer>
+    </body>
+</html>
