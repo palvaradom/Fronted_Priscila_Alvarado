@@ -239,6 +239,11 @@ main .formulario .button-container button {
     border-radius: 0.8rem;
 }
 
+main .formulario .button-container button:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
 footer {
     height:8vh;
     background-color: var(--blue);
